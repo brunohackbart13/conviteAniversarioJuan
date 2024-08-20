@@ -21,6 +21,11 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             margin: 20px;
             color: #ffffff;
+            text-align: center; /* Mantém o texto dentro da caixa centralizado */
+        }
+        .card-wrapper {
+            display: flex;
+            justify-content: flex-start; /* Alinha a caixa à esquerda */
         }
         .card-header {
             background-color: #007bff;
@@ -50,9 +55,6 @@
             line-height: 1.2;
             background: none; /* Remove background */
         }
-        .card-body {
-            text-align: left; /* Alinha o texto à esquerda */
-        }
     </style>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
@@ -63,18 +65,20 @@
         <div class="anime-text">
             CHURRASCO DO JUAN
         </div>
-        <div class="card mx-auto" style="max-width: 600px;">
-            <div class="card-header">
-                Convite para o Aniversário!
-            </div>
-            <div class="card-body">
-                <h2 class="card-title">Você está convidado!</h2>
-                <p class="card-text">Vamos comemorar meu 13º aniversário com um churrasco, e eu adoraria que você estivesse lá para celebrar comigo.</p>
-                <h4>Detalhes do Evento:</h4>
-                <p><strong>Data:</strong> 30 de Agosto de 2024</p>
-                <p><strong>Horário:</strong> 15:00</p>
-                <p><strong>Local:</strong> Rua dos Festivais, 123, São Paulo</p>
-                <a href="#" class="btn btn-primary">Confirmar Presença</a>
+        <div class="card-wrapper">
+            <div class="card" style="max-width: 600px;">
+                <div class="card-header">
+                    Convite para o Aniversário!
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Você está convidado!</h2>
+                    <p class="card-text">Vamos comemorar meu 13º aniversário com um churrasco, e eu adoraria que você estivesse lá para celebrar comigo.</p>
+                    <h4>Detalhes do Evento:</h4>
+                    <p><strong>Data:</strong> 30 de Agosto de 2024</p>
+                    <p><strong>Horário:</strong> 15:00</p>
+                    <p><strong>Local:</strong> Rua dos Festivais, 123, São Paulo</p>
+                    <a href="#" class="btn btn-primary">Confirmar Presença</a>
+                </div>
             </div>
         </div>
     </div>
